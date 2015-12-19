@@ -13,10 +13,9 @@ gem 'devise', '~> 3.4.1'
 gem 'font-awesome-rails'
 gem 'protected_attributes'
 gem 'twitter-bootstrap-rails'
-gem 'inline_svg'
+# gem 'inline_svg'
 gem 'haml'
 gem 'erb2haml'
-gem 'coffee-rails', '~> 4.1.0'
 
 group :development, :test do
   gem 'mailcatcher'

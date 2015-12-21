@@ -18,4 +18,5 @@
         =yield
     -else
       =yield
-  =render 'layouts/footer'
+  -unless current_page?(root_path)
+    =render 'layouts/footer'

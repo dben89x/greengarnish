@@ -10,7 +10,7 @@
     %h4=blog_post.created_at.strftime("%B %e, %Y")
     %p=blog_post.description
     = link_to "Read more <span class='fa fa-chevron-right'></span>".html_safe, blog_post_path(blog_post), class: 'btn btn-default'
-    -if current_admin?
-      = link_to 'Edit', edit_blog_post_path(blog_post), class: 'btn btn-default'
-      = link_to 'Delete this post', blog_post_path(blog_post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default'
+    -# -if current_admin?
+    = link_to 'Edit', edit_blog_post_path(blog_post), class: 'btn btn-default'
+    = link_to 'Delete this post', blog_post_path(blog_post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default'
     %hr

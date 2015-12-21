@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Gg
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    -unless current_page?(root_path)
+      .navbar-spacing{style:'margin-top:70px'}
+    =render partial: 'layouts/navbar'
+    =flash_messages
+    -unless devise_controller?
+      =render partial: 'blog_posts/signup_form'
+    -unless current_page? root_path
+      .container
+        =yield
+    -else
+      =yield

@@ -13,9 +13,13 @@ gem 'devise', '~> 3.4.1'
 gem 'font-awesome-rails'
 gem 'protected_attributes'
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 # gem 'inline_svg'
 gem 'haml'
 gem 'erb2haml'
+gem 'ckeditor'
+gem 'redcarpet'
+gem 'coderay'
 
 group :development, :test do
   gem 'mailcatcher'

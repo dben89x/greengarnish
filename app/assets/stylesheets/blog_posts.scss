@@ -1,0 +1,62 @@
+// Place all the styles related to the blog_posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.email-signup-container{
+  height:300px;
+  width:300px;
+  border-radius: 5px;
+  background-color: #3A5B3F;
+  border: 1px solid black;
+  margin-left: 40px;
+  margin-top: 80px;
+  color:white;
+  padding:20px 40px;
+  position: fixed;
+}
+.blog-container{
+  padding-top: 80px;
+  margin-left: 18vw;
+}
+@media (max-width: 1400px){
+  .blog-container{
+    margin-left:22vw;
+  }
+}
+@media (max-width: 1200px){
+  .blog-container{
+    margin-left:24vw;
+  }
+}
+@media (max-width: 1200px){
+  .blog-container{
+    margin-left:26vw;
+  }
+}
+@media (max-width: 1000px){
+  .blog-container{
+    margin-left:30vw;
+  }
+}
+// @media (max-width: 1000px){
+//   .email-signup-container{
+//     position: relative;
+//     margin: 0;
+//     width: 100%;
+//     border-radius: 0;
+//     height:100%;
+//     display: inline-flex;
+//     hr{
+//       display: none;
+//     }
+//     h2{
+//       padding-right:80px;
+//     }
+//     br{
+//       display:none;
+//     }
+//     input[type='submit']{
+//       float:right;
+//     }
+//   }
+// }

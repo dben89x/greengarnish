@@ -1,0 +1,12 @@
+.email-signup-container
+  %h2
+    Sign up
+  %hr
+  = form_for email_signup_path do |f|
+    .form-group
+      =f.label :email
+      =f.email_field :email, class: "form-control"
+      %br
+      %br
+
+      =f.submit "Subscribe to blog", class: 'btn btn-primary'

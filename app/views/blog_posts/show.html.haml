@@ -7,6 +7,6 @@
   %br
   -# = link_to 'Edit', edit_blog_post_path(@blog_post.id,@blog_post.slug)
   -# = link_to 'Back', blog_posts_path
-  -# -if current_admin?
-  = link_to 'Edit', edit_blog_post_path(@blog_post)
+  -if current_admin?
+    = link_to 'Edit', edit_blog_post_path(@blog_post)
   = link_to 'Back', blog_posts_path

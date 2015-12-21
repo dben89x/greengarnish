@@ -1,4 +1,4 @@
-#navbar-container{class: (current_page?(root_path) ? 'navbar-transparent' : '', style: current_page?(root_path) ? 'position:absolute' : 'position:fixed'}
+#navbar-container{class: current_page?(root_path) ? 'navbar-transparent' : '', style: current_page?(root_path) ? 'position:absolute' : 'position:fixed'}
   .container
     #nav-logo-container
       -unless current_page?(root_path)

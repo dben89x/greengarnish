@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
   def admin?
     self.admin == true
   end
+
+  def name
+    self.first_name || self.email
+  end
 end

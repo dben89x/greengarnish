@@ -1,6 +1,6 @@
 class BlogPostsController < ApplicationController
   before_action :set_blog_post, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate, :except => [ :index, :show ]
+  # before_filter :authenticate, :except => [ :index, :show ]
 
   def index
     @blog_posts = BlogPost.all.order("created_at DESC")

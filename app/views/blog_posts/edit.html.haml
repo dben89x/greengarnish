@@ -1,10 +1,8 @@
-.blog-container
-  %h1 Editing Blog Post
-  = render 'form'
-  -# = link_to 'Show', blog_post_path(@blog_post.id, @blog_post.slug), class: 'btn btn-default'
-  -# |
-  -# = link_to 'Back', blog_posts_path, class: 'btn btn-default'
-  = link_to 'Show', @blog_post, class: 'btn btn-default'
-  |
-  = link_to 'Back', blog_posts_path, class: 'btn btn-default'
-  =render 'cheatsheet'
+.gg-container.blog-page
+  .blog-container{style:'background-color:white'}
+    %h1 Editing Blog Post
+    = link_to 'Show', @blog_post, class: 'btn btn-default'
+    |
+    = link_to 'Back to Index', blog_posts_path, class: 'btn btn-default'
+    = render 'form'
+    =render 'cheatsheet'

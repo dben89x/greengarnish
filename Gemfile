@@ -20,6 +20,8 @@ gem 'erb2haml'
 gem 'ckeditor'
 gem 'redcarpet'
 gem 'coderay'
+gem 'gibbon'
+gem 'figaro'
 
 group :development, :test do
   gem 'mailcatcher'

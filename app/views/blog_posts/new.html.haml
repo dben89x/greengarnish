@@ -1,5 +1,6 @@
-.blog-container
-  %h1 New Blog Post
-  = render 'form'
-  = link_to 'Back', blog_posts_path
-  =render 'cheatsheet'
+.gg-container.blog-page
+  .blog-container{style:'background-color:white'}
+    %h1 New Blog Post
+    = link_to 'Back to Index', blog_posts_path, class: 'btn btn-default'
+    = render 'form'
+    =render 'cheatsheet'

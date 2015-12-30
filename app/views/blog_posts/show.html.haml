@@ -1,11 +1,13 @@
-.blog-container
-  %h2=@blog_post.title
-  %h4=@blog_post.created_at.strftime("%B %e, %Y")
-  %hr
-  =markdown(@blog_post.body)
-  %br
-  -# = link_to 'Edit', edit_blog_post_path(@blog_post.id,@blog_post.slug)
-  -# = link_to 'Back', blog_posts_path
-  -if current_admin?
-    = link_to 'Edit', edit_blog_post_path(@blog_post)
-  = link_to 'Back', blog_posts_path
+.gg-container.blog-page
+  .blog-container{style:'background-color:white'}
+    -if current_admin?
+      = link_to 'Edit', edit_blog_post_path(@blog_post), class: 'btn btn-primary'
+      = link_to 'Delete this post', blog_post_path(@blog_post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
+      = link_to 'Back to Index', blog_posts_path, class: 'btn btn-default'
+    %h1{style:'line-height:1em'}=@blog_post.title if @blog_post.title
+    %h4{style:'color:gray'}="by #{@blog_post.author}"
+    %br
+    =@blog_post.created_at.strftime("%B %e, %Y")
+    %hr
+    %p=markdown(@blog_post.body) if @blog_post.body
+  =render 'signup_form'

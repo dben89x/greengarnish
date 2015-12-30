@@ -51,7 +51,7 @@ class BlogPostsController < ApplicationController
   end
 
   def email_signup
-
+    
   end
 
   private

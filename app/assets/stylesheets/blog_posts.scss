@@ -1,43 +1,99 @@
 // Place all the styles related to the blog_posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.email-signup-container{
-  height:300px;
-  width:300px;
-  border-radius: 5px;
-  background-color: #3A5B3F;
-  border: 1px solid black;
-  margin-left: 40px;
-  margin-top: 80px;
-  color:white;
-  padding:20px 40px;
-  position: fixed;
-}
+// Place all the styles related to the blog_posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 .blog-container{
-  padding-top: 80px;
-  margin-left: 18vw;
+  width:65vw;
+  float:left;
+  text-align: left;
+  margin-left: 70px;
+  background-color:#dfdfdf;
+  border-radius:6px 0px 0px 6px;
+  padding:20px 40px;
+  border:1px solid #dfdfdf;
 }
-@media (max-width: 1400px){
-  .blog-container{
-    margin-left:22vw;
+.email-signup-container{
+  float:right;
+  width:300px;
+  height:368px;
+  border:15px solid #dfdfdf;
+  border-radius: 0 6px 6px 0;
+  position:fixed;
+  background-color: #dfdfdf;
+  background-color: white;
+  padding:20px;
+}
+.gg-container.blog-page{
+  padding-top:80px;
+  background-color:#b7b7b7;
+  display:flex;
+  a:visited{
+    color:white;
+    text-decoration: none;
+  }
+  .btn-default:visited{
+    color: black;
   }
 }
-@media (max-width: 1200px){
-  .blog-container{
-    margin-left:24vw;
-  }
+.cheatsheet{
+  display:inline-block;
+  border:1px solid gray;
+  border-radius:6px;
+  padding:20px;
 }
-@media (max-width: 1200px){
-  .blog-container{
-    margin-left:26vw;
-  }
+textarea#blog_post_description{
+  height:100px;
 }
-@media (max-width: 1000px){
-  .blog-container{
-    margin-left:30vw;
-  }
+.subscribe-btn{
+  background-color: #4bc970;
+  color:white;
 }
+.subscribe-btn:hover{
+  background-color: #42A15E;
+  color:white;
+  transition: 0.4s;
+}
+
+
+//
+// .email-signup-container{
+//   height:300px;
+//   width:300px;
+//   border-radius: 5px;
+//   background-color: #3A5B3F;
+//   border: 1px solid black;
+//   margin-left: 40px;
+//   margin-top: 80px;
+//   color:white;
+//   padding:20px 40px;
+//   position: fixed;
+// }
+// .blog-container{
+//   padding-top: 80px;
+//   margin-left: 18vw;
+// }
+// @media (max-width: 1400px){
+//   .blog-container{
+//     margin-left:22vw;
+//   }
+// }
+// @media (max-width: 1200px){
+//   .blog-container{
+//     margin-left:24vw;
+//   }
+// }
+// @media (max-width: 1200px){
+//   .blog-container{
+//     margin-left:26vw;
+//   }
+// }
+// @media (max-width: 1000px){
+//   .blog-container{
+//     margin-left:30vw;
+//   }
+// }
 // @media (max-width: 1000px){
 //   .email-signup-container{
 //     position: relative;

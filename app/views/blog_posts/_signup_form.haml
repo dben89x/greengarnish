@@ -1,7 +1,7 @@
 .email-signup-container
   %h2
     Sign up
-  %hr
+  %hr{style:'background-color:#b7b7b7'}
   = form_for email_signup_path do |f|
     .form-group
       =f.label :email
@@ -9,4 +9,4 @@
       %br
       %br
 
-      =f.submit "Subscribe to blog", class: 'btn btn-primary'
+      =f.submit "Subscribe to blog", class: 'btn subscribe-btn medium-text'

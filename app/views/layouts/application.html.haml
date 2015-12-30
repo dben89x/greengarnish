@@ -11,12 +11,6 @@
       .navbar-spacing{style:'margin-top:70px'}
     =render partial: 'layouts/navbar'
     =flash_messages
-    -unless devise_controller? or current_page?(root_path)
-      =render partial: 'blog_posts/signup_form'
-    -unless current_page? root_path
-      .container
-        =yield
-    -else
-      =yield
+    =yield
   -unless current_page?(root_path)
     =render 'layouts/footer'

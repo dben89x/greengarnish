@@ -7,15 +7,13 @@ body{
 }
 //////// hero /////////
 #home-hero{
-  margin:0;
-  // background-image: url(http://mikatorestaurant.com/images/Mojito-Cocktail1.jpg);
-  // background-size:cover;
-  height:100vh;
   background-color: #5fcf80;
-  // background-color: #289F4B;
 }
 #home-container{
-  padding: 200px 7vw 0 7vw;
+  padding: 200px 7vw 40px 7vw;
+  height:100%;
+  background-color: #5fcf80;
+  display:inline-block;
 }
 #home-hero-text{
   padding-top:60px;

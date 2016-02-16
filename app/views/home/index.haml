@@ -1,18 +1,18 @@
-#home-hero
-  #home-container
-    #home-hero-text.col-md-7.medium-text
-      Craft Cocktails
-      %br
-      Made to Impress
-      .hero-subhead.light-text
-        Unique cocktail recipes made simply by you
-    #home-signup-container.col-md-5
-      #home-signup-header
-        Get pleasantly infrequent email updates
-      #home-signup-content
-        = form_for email_signup_path do |f|
-          =f.text_field :first_name, placeholder: 'First Name', class: 'home-name-field home-form-fields'
-          =f.text_field :first_name, placeholder: 'Last Name', class: 'home-name-field home-form-fields'
-          =f.email_field :email, placeholder: 'Email address', class: 'home-email-field home-form-fields'
-          %hr
-          =f.submit "Sign up to hear about our progress", class: 'btn home-signup-btn'
+-# #home-hero
+#home-container
+  #home-hero-text.col-md-7.medium-text
+    Craft Cocktails
+    %br
+    Made to Impress
+    .hero-subhead.light-text
+      Unique cocktail recipes made simply by you
+  #home-signup-container.col-md-5
+    #home-signup-header
+      Get pleasantly infrequent email updates
+    #home-signup-content
+      = form_for email_signup_path do |f|
+        =f.text_field :first_name, placeholder: 'First Name', class: 'home-name-field home-form-fields'
+        =f.text_field :first_name, placeholder: 'Last Name', class: 'home-name-field home-form-fields'
+        =f.email_field :email, placeholder: 'Email address', class: 'home-email-field home-form-fields'
+        %hr
+        =f.submit "Sign up to hear about our progress", class: 'btn home-signup-btn'

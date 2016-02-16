@@ -22,6 +22,7 @@ gem 'redcarpet'
 gem 'coderay'
 gem 'gibbon',  '~>1.2.0'
 gem 'figaro'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'mailcatcher'

@@ -1,8 +1,8 @@
-#navbar-container{class: current_page?(root_path) ? 'navbar-transparent' : '', style: current_page?(root_path) ? 'position:absolute' : 'position:fixed'}
+#navbar-container
   .container
     #nav-logo-container
       -# -unless current_page?(root_path)
-      = link_to image_tag("green_garnish_icon.svg",width:50), root_path
+      =link_to image_tag("green_garnish_icon.svg",width:50), root_path
     #nav-links
       %ul.hidden-xs.hidden-sm
         -# %li= link_to "BLOG", blog_posts_path

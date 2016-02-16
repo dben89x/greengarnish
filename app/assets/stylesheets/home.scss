@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
   margin:0;
+  font-family: 'Gotham-Rounded-Light';
 }
 //////// hero /////////
 #home-hero{
@@ -10,21 +11,20 @@ body{
   // background-image: url(http://mikatorestaurant.com/images/Mojito-Cocktail1.jpg);
   // background-size:cover;
   height:100vh;
-  // background-color: #5fcf80;
-  background-color: #289F4B;
+  background-color: #5fcf80;
+  // background-color: #289F4B;
 }
 #home-container{
-  padding: 200px 5vw 0 5vw;
+  padding: 200px 7vw 0 7vw;
 }
 #home-hero-text{
   padding-top:60px;
   color:white;
-  font-size:65px;
+  font-size:55px;
   line-height:1em;
 }
 .hero-subhead{
   font-size:25px;
-  font-weight:100;
   line-height: 1em;
   margin-top:20px;
   margin-bottom:40px;
@@ -38,7 +38,7 @@ body{
   padding:0;
 }
 #home-signup-header{
-  padding:15px;
+  padding:25px;
   text-align: center;
   color:white;
   font-weight: 300;
@@ -72,8 +72,8 @@ body{
 .home-signup-btn{
   background-color: #34ad58;
   height:50px;
-  font-size:17px;
-  padding:10px 40px;
+  font-size:15px;
+  padding:10px 30px;
   color:white;
 }
 .btn:hover{
